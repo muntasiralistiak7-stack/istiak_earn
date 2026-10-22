@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ISTIAK EARN — Earn Smart</title>
+<style>
+:root{--red:#8b5cf6;--orange:#6d28d9;--gold:#a78bfa;--cream:#09090f;--green:#34d399;--ink:#f3f0ff;--muted:#aaa5bb}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);font-family:"Noto Sans Bengali","Hind Siliguri",system-ui,sans-serif;color:var(--ink)}
+button,input,select{font:inherit}button{cursor:pointer;border:0}
+.top{background:linear-gradient(120deg,#09090f,#4c1d95);color:#fff;padding:22px 18px 34px;border-radius:0 0 30px 30px}
+.topline{display:flex;justify-content:space-between;align-items:center;max-width:1050px;margin:auto}.brand{font-weight:900;font-size:23px;letter-spacing:.5px}.brand span{color:#ffe46a}.pill{background:#ffffff25;border:1px solid #ffffff60;border-radius:30px;padding:8px 12px;font-size:13px}
+.wrap{max-width:1050px;margin:-18px auto 100px;padding:0 15px}.balance{background:var(--red);color:white;text-align:center;padding:23px;border-radius:26px;box-shadow:0 12px 25px #b9272928}.balance small{opacity:.85}.amount{font-size:42px;font-weight:900;margin:5px 0}.balance button{background:#171322;color:#c4b5fd;border:2px solid #8b5cf6;border-radius:15px;padding:13px 18px;width:100%;margin-top:10px;font-weight:900}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}.stat,.panel,.service{background:#14131d;border:1px solid #302544;border-radius:20px;padding:18px;box-shadow:0 6px 18px #00000035}.stat{text-align:center}.emoji{width:54px;height:54px;margin:0 auto 9px;border-radius:17px;background:#24183b;display:grid;place-items:center;font-size:27px}.stat h3{margin:0;color:var(--muted);font-size:14px}.stat strong{display:block;font-size:26px;color:var(--red);margin-top:5px}.section-title{font-size:19px;color:var(--red);font-weight:900;margin:25px 0 12px}.panel h2{margin:0 0 8px;font-size:19px}.muted{color:var(--muted);font-size:14px}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.service{padding:15px 6px;text-align:center;color:var(--red);font-weight:800}.service b{display:block;font-size:25px;color:var(--gold);margin-bottom:5px}.task{display:flex;gap:12px;align-items:center;justify-content:space-between;margin:10px 0;padding:14px;background:#191624;border:1px solid #302544;border-radius:16px}.task h3{font-size:16px;margin:0 0 4px}.primary{background:linear-gradient(100deg,#a78bfa,#6d28d9);color:#fff;padding:11px 15px;border-radius:12px;font-weight:900;white-space:nowrap}.secondary{background:#2a1422;color:#f0abfc;padding:11px 15px;border-radius:12px;font-weight:800}.refbox{background:linear-gradient(120deg,#211333,#6d28d9);color:white;padding:20px;border-radius:22px}.refcode{background:#ffffff25;border:1px solid #ffffff70;border-radius:14px;padding:13px;font-weight:900;letter-spacing:2px;display:flex;justify-content:space-between;align-items:center}.wide{width:100%;margin-top:12px}.formrow{display:grid;gap:10px;margin-top:12px}.formrow input,.formrow select{width:100%;padding:13px;border:1px solid #e7d7b4;border-radius:12px;background:#14131d;outline-color:var(--gold)}.hidden{display:none!important}.page{display:none}.page.active{display:block}.nav{position:fixed;z-index:10;bottom:0;left:0;right:0;background:linear-gradient(100deg,#09090f,#4c1d95);display:flex;justify-content:center;box-shadow:0 -5px 18px #b84c171b}.nav button{flex:1;max-width:210px;background:transparent;color:#fff9df;padding:11px 2px 9px;font-size:12px;font-weight:800}.nav .ico{display:block;font-size:22px;margin-bottom:3px}.nav button.active{background:#c4b5fd;color:#171322;border-radius:17px 17px 0 0}.notice{background:#11261f;color:#6ee7b7;border-radius:14px;padding:12px;font-size:14px;margin-top:12px}.danger{background:#fff0ef;color:#ad2b31}.smallbtn{background:#24183b;color:#c4b5fd;border-radius:9px;padding:8px 10px;font-weight:800}.footer{text-align:center;color:#888;font-size:12px;padding:25px 10px}
+@media(min-width:760px){.grid{grid-template-columns:repeat(4,1fr)}.balance{display:grid;grid-template-columns:1fr auto;align-items:center;text-align:left;gap:20px}.balance button{width:auto;margin:0}.service-grid{grid-template-columns:repeat(4,1fr)}.layout{display:grid;grid-template-columns:1.5fr 1fr;gap:18px}.nav{position:sticky;bottom:auto;margin-top:-90px}.wrap{margin-bottom:35px}.nav button{padding:14px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="topline"><div class="brand">✨ ISTIAK <span>EARN</span></div><div class="pill">● ডেমো অ্যাকাউন্ট</div></div></header>
+<main class="wrap">
+<section id="home" class="page active">
+<div class="balance"><div><small>আপনার মোট ব্যালেন্স</small><div class="amount">৳ <span id="balance">635.00</span></div><small>ডেমো ব্যালেন্স — বাস্তব টাকা নয়</small></div><button onclick="showPage('withdraw')">▣ টাকা উত্তোলন →</button></div>
+<div class="grid">
+<div class="stat"><div class="emoji">👛</div><h3>মেইন ব্যালেন্স</h3><strong>৳ <span id="mainBalance">635.00</span></strong></div>
+<div class="stat"><div class="emoji">👥</div><h3>মোট রেফারেল</h3><strong id="referrals">0</strong></div>
+<div class="stat"><div class="emoji">💰</div><h3>মোট আয়</h3><strong>৳ <span id="earnings">515.00</span></strong></div>
+<div class="stat"><div class="emoji">✅</div><h3>সম্পন্ন টাস্ক</h3><strong id="doneCount">0</strong></div>
+</div>
+<div class="layout"><div><div class="section-title">আজকের টাস্ক</div><div class="panel" id="taskList"></div></div>
+<div><div class="section-title">রেফারেল বোনাস</div><div class="refbox"><h2>বন্ধু আমন্ত্রণ করুন!</h2><p>আপনার রেফারেল কোড শেয়ার করুন। এই প্রোটোটাইপে রেফারেল সংখ্যা শুধু ডেমো হিসেবে দেখানো হয়।</p><div class="refcode"><span>ISTIAK26</span><button class="smallbtn" onclick="copyCode()">কপি</button></div><button class="primary wide" onclick="showPage('team')">আমার টিম দেখুন →</button></div></div></div>
+</section>
+<section id="tasks" class="page"><div class="section-title">টাস্ক সেন্টার</div><div class="panel"><h2>সহজ টাস্ক সম্পন্ন করুন</h2><p class="muted">এটি একটি UI ডেমো। কোনো বিজ্ঞাপন দেখা, ক্লিক বা বাইরের কাজ এখানে যাচাই করা হয় না।</p><div id="taskList2"></div></div></section>
+<section id="team" class="page"><div class="section-title">আমার টিম</div><div class="panel"><div class="emoji">👥</div><h2>আপনার টিম</h2><p>মোট রেফারেল: <b id="teamRefs">0</b></p><div class="refcode" style="color:var(--ink);background:#191624;border-color:#49366a"><span>ISTIAK26</span><button class="primary" onclick="copyCode()">কপি করুন</button></div><div class="notice">রিয়েল রেফারেল ট্র্যাকিং চালু করতে ব্যাকএন্ড ও নিরাপদ ডাটাবেস লাগবে।</div></div></section>
+<section id="withdraw" class="page"><div class="section-title">টাকা উত্তোলন</div><div class="panel"><h2>উত্তোলনের অনুরোধ</h2><div class="notice danger">এটি শুধু ফ্রন্টএন্ড ডেমো। কোনো বাস্তব পেমেন্ট বা টাকা পাঠানো হবে না।</div><form class="formrow" onsubmit="requestWithdraw(event)"><label>পেমেন্ট মাধ্যম<select id="method"><option>bKash</option><option>Nagad</option><option>Rocket</option></select></label><label>মোবাইল নম্বর<input id="phone" inputmode="tel" placeholder="01XXXXXXXXX" required pattern="01[0-9]{9}"></label><label>পরিমাণ (৳)<input id="withdrawAmount" type="number" min="100" step="1" placeholder="100" required></label><button class="primary" type="submit">ডেমো অনুরোধ জমা দিন</button></form><div id="withdrawMsg"></div></div></section>
+<section id="account" class="page"><div class="section-title">আমার অ্যাকাউন্ট</div><div class="panel"><div class="emoji">👤</div><h2>ISTIAK EARN ব্যবহারকারী</h2><p class="muted">প্রোফাইল সেটিংস (ডেমো)</p><form class="formrow" onsubmit="saveProfile(event)"><label>আপনার নাম<input id="profileName" placeholder="আপনার নাম"></label><label>ইমেইল (ঐচ্ছিক)<input id="email" type="email" placeholder="name@example.com"></label><button class="primary">প্রোফাইল সংরক্ষণ</button></form><div id="profileMsg"></div><button class="secondary wide" onclick="resetDemo()">ডেমো ডেটা রিসেট</button></div></section>
+<div class="footer">© 2026 ISTIAK EARN · Demo UI · বাস্তব আয়/পেমেন্টের নিশ্চয়তা নয়</div>
+</main>
+<nav class="nav">
+<button class="active" data-page="home" onclick="showPage('home')"><span class="ico">⌂</span>হোম</button>
+<button data-page="tasks" onclick="showPage('tasks')"><span class="ico">▣</span>টাস্ক</button>
+<button data-page="team" onclick="showPage('team')"><span class="ico">♧</span>টিম</button>
+<button data-page="withdraw" onclick="showPage('withdraw')"><span class="ico">▰</span>উত্তোলন</button>
+<button data-page="account" onclick="showPage('account')"><span class="ico">⚙</span>অ্যাকাউন্ট</button>
+</nav>
+<script>
+const tasks=[{id:1,title:"প্রতিদিনের চেক-ইন",desc:"ডেমো টাস্ক · একবার সম্পন্ন করা যাবে",reward:5},{id:2,title:"নতুনদের গাইড পড়ুন",desc:"ডেমো টাস্ক · নির্দেশনা দেখুন",reward:10},{id:3,title:"প্রোফাইল সম্পূর্ণ করুন",desc:"ডেমো টাস্ক · প্রোফাইল আপডেট করুন",reward:5}];
+let state={balance:635,earnings:515,done:[],refs:0};
+function money(n){return Number(n).toFixed(2)}
+function renderTasks(){const html=tasks.map(t=>{let done=state.done.includes(t.id);return `<div class="task"><div><h3>${t.title}</h3><div class="muted">${t.desc}</div><b style="color:var(--green)">৳ ${money(t.reward)}</b></div><button class="${done?'secondary':'primary'}" ${done?'disabled':''} onclick="completeTask(${t.id})">${done?'সম্পন্ন ✓':'শুরু করুন'}</button></div>`}).join('');document.getElementById('taskList').innerHTML=html;document.getElementById('taskList2').innerHTML=html}
+function refresh(){document.getElementById('balance').textContent=money(state.balance);document.getElementById('mainBalance').textContent=money(state.balance);document.getElementById('earnings').textContent=money(state.earnings);document.getElementById('referrals').textContent=state.refs;document.getElementById('teamRefs').textContent=state.refs;document.getElementById('doneCount').textContent=state.done.length;renderTasks()}
+function completeTask(id){if(state.done.includes(id))return;let t=tasks.find(x=>x.id===id);state.done.push(id);state.balance+=t.reward;state.earnings+=t.reward;refresh();alert('ডেমো টাস্ক সম্পন্ন! ৳'+money(t.reward)+' ডেমো ব্যালেন্সে যোগ হয়েছে।')}
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'})}
+function copyCode(){if(navigator.clipboard){navigator.clipboard.writeText('ISTIAK26').then(()=>alert('রেফারেল কোড কপি হয়েছে: ISTIAK26')).catch(()=>alert('আপনার কোড: ISTIAK26'))}else alert('আপনার কোড: ISTIAK26')}
+function requestWithdraw(e){e.preventDefault();let amount=Number(document.getElementById('withdrawAmount').value);let phone=document.getElementById('phone').value;if(amount<100){document.getElementById('withdrawMsg').innerHTML='<div class="notice danger">সর্বনিম্ন ডেমো উত্তোলন ৳100।</div>';return}document.getElementById('withdrawMsg').innerHTML=`<div class="notice">ডেমো অনুরোধ তৈরি হয়েছে: ৳${money(amount)} · ${document.getElementById('method').value} · ${phone}<br>এটি কোথাও পাঠানো হয়নি এবং বাস্তব পেমেন্ট হবে না।</div>`}
+function saveProfile(e){e.preventDefault();document.getElementById('profileMsg').innerHTML='<div class="notice">ডেমো প্রোফাইল সংরক্ষিত হয়েছে (শুধু এই পেজে)।</div>'}
+function resetDemo(){state={balance:635,earnings:515,done:[],refs:0};refresh();alert('ডেমো ডেটা রিসেট হয়েছে।')}
+refresh();
+</script>
+</body></html>
